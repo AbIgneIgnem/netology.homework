@@ -1,0 +1,10 @@
+word = input('Введите слово, состоящее из латинских букв:')
+word_lenght = len(word)
+middle_letter = word_lenght // 2
+
+if not word.encode().isalpha():
+    print('Слово не состоит из латинских букв ')
+elif word_lenght % 2 == 0:
+    print(word[middle_letter-1:middle_letter+1])
+else:
+    print(word[middle_letter])
